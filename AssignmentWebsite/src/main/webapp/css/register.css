@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+body {
+    background-color: black;
+    font-family: Rajdhani, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Reset default margin */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Fixed position at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+}
+
+.navbar button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar button:hover {
+    background-color: #ddd;
+}
+
+/* Login Container Styles */
+.login-container {
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px; /* Adjust the top margin to create space for the fixed navbar */
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 20px;
+    margin-bottom: 90px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    background-color: transparent;
+    font-family: Rajdhani,sans-serif;
+    border: none;
+    text-align: left;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    outline: none;
+}
+
+
+input[type=password] {
+    background-color: transparent;
+    font-family: Rajdhani,sans-serif;
+    border: none;
+    text-align: left;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    outline: none;
+}
+input[type=email] {
+    background-color: transparent;
+    font-family: Rajdhani,sans-serif;
+    border: none;
+    text-align: left;
+    color: white;
+    width: 130px;
+    margin: 10px;
+    outline: none;
+}
+
+
+button[data-augmented-ui] {
+    text-align: left;
+    font-family: Rajdhani,sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  border-top: var(--aug-border-top, 1px) solid var(--aug-border-bg, #9c3230);
+    border-bottom: var(--aug-border-bottom, 1px) solid var(--aug-border-bg, #9c3230);
+    border-right: var(--aug-border-right, 1px) solid var(--aug-border-bg, #9c3230);
+    border-left: var(--aug-border-left, 7px) solid var(--aug-border-bg, #9c3230);
+    margin-bottom: 70px;
+    height: 40px;
+    border-radius: var(--aug-br, 0.7rem);
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.input-container[data-augmented-ui] {
+  width: 100%;
+    align-items: center;
+    border: 1px solid var(--aug-border-bg, white); /* Set default border color to white */
+    margin-bottom: 70px;
+    height: 40px;
+    border-radius: 0.4rem; 
+    
+}
+
+label {
+    padding-right: 140px;
+    color: white;
+}
+
+.pass {
+    padding-right: 109px;
+}
